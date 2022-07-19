@@ -5,12 +5,12 @@ export default {
   output: [
     {
       file: hookPackage.main,
-      format: 'cjs',
+      format: 'esm',
       sourcemap: true,
     },
     {
       file: hookPackage.module,
-      format: 'esm',
+      format: 'es',
       sourcemap: true
     }
   ],
