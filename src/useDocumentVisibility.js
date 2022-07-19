@@ -22,7 +22,7 @@ export function useDocumentVisibility() {
     return () => {
       document.removeEventListener('visibilityChange', isPageVisible);
     };
-  }, []);
+  }, [visible]);
 
   return {
     count,

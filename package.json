@@ -1,6 +1,6 @@
 {
   "name": "@ludaalt/react-document-visibility",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "Package for working with tab activity.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
