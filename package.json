@@ -3,7 +3,6 @@
   "version": "1.0.8",
   "description": "Package for working with tab activity.",
   "main": "dist/bundle.js",
-  "module": "dist/bundle.js",
   "scripts": {
     "build": "rollup -c rollup.config.js -w"
   },
