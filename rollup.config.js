@@ -1,17 +1,14 @@
-const hookPackage = require('./package.json');
+import pkg from './package.json';
 
 export default {
-  input: "src/index.js",
+  input: 'src/index.js',
   output: [
     {
-      file: hookPackage.main,
-      format: 'esm',
+      file: pkg.main,
+      format: 'cjs',
+      exports: 'named',
       sourcemap: true,
+      strict: false,
     },
-    {
-      file: hookPackage.module,
-      format: 'es',
-      sourcemap: true
-    }
   ],
 };
