@@ -8,7 +8,7 @@ export function useDocumentVisibility() {
     document.addEventListener('visibilitychange', function () {
       if (document.hidden) {
         setVisible(false);
-        setCount((count) => count + 1);
+        setCount(count + 1);
       } else {
         setVisible(true);
       }
