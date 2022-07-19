@@ -5,12 +5,14 @@ export function useDocumentVisibility() {
   const [visible, setVisible] = useState(true);
 
   const isPageVisible = () => {
-    if (document.hidden) {
-      setVisible(false);
-      setCount((count) => count + 1);
-    } else {
-      setVisible(true);
-    }
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) {
+        setVisible(false);
+        setCount((count) => count + 1);
+      } else {
+        setVisible(true);
+      }
+    });
   };
 
   const onVisibilityChange = (callback) => {
@@ -18,11 +20,9 @@ export function useDocumentVisibility() {
   };
 
   useEffect(() => {
-    document.addEventListener('visibilityChange', isPageVisible);
-    return () => {
-      document.removeEventListener('visibilityChange', isPageVisible);
-    };
-  }, [visible]);
+    isPageVisible();
+    onVisibilityChange;
+  }, []);
 
   return {
     count,
