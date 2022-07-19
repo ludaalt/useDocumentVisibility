@@ -1,1 +1,1 @@
-export { default as useDocumentVisibility } from './useDocumentVisibility.js';
+export { useDocumentVisibility } from './useDocumentVisibility';

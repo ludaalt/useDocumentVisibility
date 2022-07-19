@@ -1,6 +1,6 @@
 {
   "name": "@ludaalt/react-document-visibility",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Package for working with tab activity.",
   "main": "dist/bundle.js",
   "scripts": {
@@ -28,9 +28,7 @@
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-replace": "^4.0.0",
-    "rollup": "^2.77.0",
-    "rollup-plugin-livereload": "^2.0.5",
-    "rollup-plugin-serve": "^2.0.0"
+    "rollup": "^2.77.0"
   },
   "dependencies": {
     "react": "^18.2.0",

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function useDocumentVisibility() {
+export function useDocumentVisibility() {
 
     const [count, setCount] = useState(0);
     const [visible, setVisible] = useState(true);
