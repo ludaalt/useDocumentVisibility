@@ -3,13 +3,22 @@ import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import replace from '@rollup/plugin-replace';
 
+const hookPackage = require('./package.json');
+
 export default {
   input: "src/index.js",
-  output: {
-    file: "dist/bundle.js",
-    format: 'es',
-    sourcemap: true,
-  },
+  output: [
+    {
+      file: hookPackage.main,
+      format: 'cjs',
+      sourcemap: true,
+    },
+    {
+      file: hookPackage.module,
+      format: 'esm',
+      sourcemap: true
+    }
+  ],
   external: ['react', 'react-dom'],
   plugins: [
     nodeResolve({
