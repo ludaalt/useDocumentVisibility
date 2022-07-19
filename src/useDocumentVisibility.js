@@ -22,7 +22,7 @@ export function useDocumentVisibility() {
   useEffect(() => {
     isPageVisible();
     onVisibilityChange;
-  }, []);
+  });
 
   return {
     count,
