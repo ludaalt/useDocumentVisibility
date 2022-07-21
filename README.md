@@ -16,6 +16,10 @@
 
 https://codesandbox.io/s/hungry-architecture-5hbr34
 
+### Ссылка на библиотеку
+
+https://www.npmjs.com/package/@ludaalt/react-document-visibility
+
 ### Пример работы хука
 
 `useDocumentVisibility.ts`
