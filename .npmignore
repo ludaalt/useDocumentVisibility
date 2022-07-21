@@ -3,3 +3,4 @@ dist
 .prettierrc
 rollup.config.js
 tsconfig.json
+.babelrc
