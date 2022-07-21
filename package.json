@@ -1,6 +1,6 @@
 {
   "name": "@ludaalt/react-document-visibility",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": "Package for working with browser tab activity.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -36,6 +36,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^2.77.0",
+    "tslib": "^2.4.0",
     "typescript": "^4.7.4"
   },
   "peerDependencies": {
