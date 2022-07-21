@@ -1,4 +1,5 @@
 import pkg from './package.json';
+import typescript from '@rollup/plugin-typescript';
 
 export default {
   input: 'src/index.js',
@@ -11,4 +12,6 @@ export default {
       strict: false,
     },
   ],
+  plugins: [typescript()],
+  external: ['react', 'react-dom'],
 };

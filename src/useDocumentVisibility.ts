@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 
 export function useDocumentVisibility() {
-  const [count, setCount] = useState(0);
-  const [visible, setVisible] = useState(true);
+  const [count, setCount] = useState<number>(0);
+  const [visible, setVisible] = useState<boolean>(true);
 
   const isPageVisible = () => {
     document.addEventListener('visibilitychange', function () {
@@ -15,7 +15,7 @@ export function useDocumentVisibility() {
     });
   };
 
-  const onVisibilityChange = (callback) => {
+  const onVisibilityChange = (callback: Function) => {
     callback(visible);
   };
 
